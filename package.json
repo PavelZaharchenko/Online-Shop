@@ -1,0 +1,26 @@
+{
+  "name": "dw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelZaharchenko/Online-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelZaharchenko/Online-Shop/issues"
+  },
+  "homepage": "https://github.com/PavelZaharchenko/Online-Shop#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-less": "^3.3.2",
+    "gulp-watch": "^4.3.11"
+  }
+}
