@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Online Shop</title>
+	<meta name="description" content="">
+	<meta name="Keywords" content="">
 	<link rel="stylesheet" type="text/css" href="style/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style/css/style.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"> -->
 </head>
 <body>
 <!-- 	header -->
@@ -15,10 +18,32 @@
 			<div class="row header">
 				<div class="col-md-12">
 					<div class="button-wrap">
-						<a href="#" class="search magnifier"></a>
-						<a href="#" class="search busket">
-							<img src="style/img/slice-8.png">
-						</a>
+      					<a class="search magnifier" data-toggle="modal" data-target="#myModal"></a>
+<!-- 						<div id="myModal" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" type="button" data-dismiss="modal">×</button>
+									</div>
+									<div class="modal-body">
+      									<form class="navbar-form navbar-left">
+        									<div class="form-group">
+          										<input type="text" class="form-control" placeholder="Search">
+        									</div>
+        									<button type="submit" class="btn btn-default">Go find!</button>
+      									</form>
+      								</div>
+      								<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div> -->
+						<div class="basket-wrapper">
+        					<a href="#" class="cart-button">
+          						<span class="cart-button-quantity"></span>
+        					</a>
+      					</div>
+
+
 					</div>
 				</div>
 				<div class="col-md-12">
@@ -37,7 +62,7 @@
 			</div>
 		</div>
 	</header>
-	<!-- 		slider -->
+	<!-- slider -->
 	<div class="container-fluid slider-wrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
   		<!-- Indicators -->
@@ -49,15 +74,15 @@
   		<!-- Wrapper for slides -->
   			<div class="carousel-inner">
 	    		<div class="item active">
-		      			<img src="style/img/slid1.jpg" alt="clock1">
+		      		<img src="style/img/slid1.jpg" alt="clock1">
 	    		</div>
 
 	    		<div class="item">
-		      			<img src="style/img/slid2.jpg" alt="clock2">
+		      		<img src="style/img/slid2.jpg" alt="clock2">
 	    		</div>
 
 	    		<div class="item">
-		      			<img src="style/img/slid3.jpg" alt="clock3">
+		      		<img src="style/img/slid3.jpg" alt="clock3">
 	    		</div>
   			</div>
 		<!-- Left and right controls -->
@@ -71,94 +96,198 @@
   			</a>
 		</div>
 	</div>	
-<!-- 	content -->
+	<!-- content -->
 	<main class="page-main">
 		<div class="main-background">
-			<div class="container">
-<!-- 			tab-nav -->
-				<div class="tab-nav row">
-					<div class="tab-nav__item active col-sm-6" data-num="1">
-						<h1 class="tab-nav__item-title">watches</h1>
-						<p class="tab-nav__item-text">A slim timepiece sits on your wrist.</p>
-						<a href="#" class="tab-nav__item-btn button-item1">shop now</a>
-					</div>
-					<div class="tab-nav__item col-sm-6" data-num="2">
-						<h1 class="tab-nav__item-title">Accessories</h1>
-						<p class="tab-nav__item-text">A slim timepiece sits on your wrist.</p>
-						<a href="#" class="tab-nav__item-btn button-item2">shop now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-<!-- 		tab-content -->
-			<div class="tab-content active row" data-num="1">
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-				<div class="product-item col-sm-3 col-md-3">
-					<img class="product-item__icon" src="style/img/no-product-img.jpg">
-					<p class="product-item__title">Dapper Bristol</p>
-					<p class="product-item__price">$299</p>
-				</div>
-			</div>
-		</div>
-<!-- 		tab content2 -->
+        	<div class="container">
+          		<div class="tab-nav row">
+            		<div class="tab-nav__item col-sm-6">
+              			<h1 class="tab-nav__item-title">watches</h1>
+              			<p class="tab-nav__item-text">A slim timepiece sits on your wrist.</p>
+              			<a class="tab-nav__item-btn button-item1" href="#home" aria-controls="profile" role="tab" data-toggle="tab">shop now</a>
+            		</div>
+            		<div class="tab-nav__item col-sm-6">
+              			<h1 class="tab-nav__item-title">Accessories</h1>
+              			<p class="tab-nav__item-text">A slim timepiece sits on your wrist.</p>
+              			<a class="tab-nav__item-btn button-item2" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">shop now</a>
+            		</div>
+          		</div>
+        	</div>
+    	</div>
+    	<div class="container">
+      		<div class="tab-content">
+        		<div role="tabpanel" class="tab-pane fade in active" id="home">
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$180</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 3331" data-price="180" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$220</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 4441" data-price="220" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$220</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 5551" data-price="220" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$299</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 6661" data-price="299" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$350</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 7771" data-price="350" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$200</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 8881" data-price="200" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$150</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 9991" data-price="150" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$299</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 1010101" data-price="299" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+
+        		</div>
+
+				<!-- #2 -->
+        		<div role="tabpanel" class="tab-pane fade" id="profile">
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$499</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 1111" data-price="499" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$530</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 2221" data-price="530" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$450</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 3331" data-price="450" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$570</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 4441" data-price="570" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$590</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 5551" data-price="590" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$699</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 6661" data-price="699" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$650</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 7771" data-price="650" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+          			<div class="product-item col-sm-3 col-md-3">
+            			<img class="product-item__icon" src="style/img/no-product-img.jpg">
+            			<p class="product-item__title">Dapper Bristol</p>
+            			<p class="product-item__price">$720</p>
+            			<a href="#" class="cart-buy-button" data-name="JanSport PD 8881" data-price="720" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+          			</div>
+        		</div>
+        		<!-- #2 -->
+
+      		</div>
+    	</div>
+		<!--tab content2-->
 		<section class="info-block">
 			<div class="container">
-				<div class="row">
-					<div class="info-block__item col-sm-4 col-md-3">
+				<div class="row info-wrap">
+					<div class="info-block__item">
 						<img src="style/img/no-product-img.jpg">
 						<h2 class="info-block__title">Lorem</h2>
 						<p class="info-block__description">
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quibusdam atque dolor nobis, assumenda nisi!
 						</p>
+						<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
+						<div id="myModal" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" type="button" data-dismiss="modal">×</button>
+									</div>
+									<div class="modal-body">
+										Текст уведомления
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="info-block__item col-sm-4 col-md-3">
+					<div class="info-block__item">
 						<img src="style/img/no-product-img.jpg">
 						<h2 class="info-block__title">Lorem</h2>
 						<p class="info-block__description">
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a nisi veritatis modi, fugit repellendus!
 						</p>
+						<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
+						<div id="myModal" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" type="button" data-dismiss="modal">×</button>
+									</div>
+									<div class="modal-body">
+										Текст уведомления
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="info-block__item col-sm-4 col-md-3">
+					<div class="info-block__item">
 						<img src="style/img/no-product-img.jpg">
 						<h2 class="info-block__title">Lorem</h2>
 						<p class="info-block__description">
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a nisi veritatis modi, fugit repellendus!
 						</p>
+						<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
+						<div id="myModal" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<div class="modal-header">
+											<button class="close" type="button" data-dismiss="modal">×</button>
+										</div>
+										<div class="modal-body">
+											Текст уведомления
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -171,7 +300,6 @@
    							src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" 
    							width="100%" height="400" frameborder="0" style="border:0">
    						</iframe>
-						
 					</div>
 					<div class="location-form col-sm-12 col-md-4">
 						<div class="dropdown show">
@@ -266,44 +394,25 @@
 						</li>
 					</ul>
 				</div>
-
-
-
-
-
-
-
 			</div>
 		</div>
-		
 	</footer>
 
 
-
-<!-- пример работы с табами
-<div>
-  <!- Навигация -->
-<!--   <ul class="nav-wrap">
-    <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Домой</a></li>
-    <li><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Профиль</a></li>
-    <li><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Сообщения</a></li>
-    <li><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Настройки</a></li>
-  </ul> -->
-  <!-- Содержимое вкладок -->
-<!--   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade active" id="home">111</div>
-    <div role="tabpanel" class="tab-pane fade" id="profile">222</div>
-    <div role="tabpanel" class="tab-pane fade" id="messages">333</div>
-    <div role="tabpanel" class="tab-pane fade" id="settings">444</div>
-  </div>
-</div> -->
-
-
-
-
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="style/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='libs/bootstrap-3.3.7-dist/js/bootstrap.js'></script>
+	<script type="text/javascript" src="libs/salejs/cart.js"></script>
+	<script>
+  		cartjs.initialize({
+	    	emailOrdersTo  : 'pavelzacharchenko@gmail.com',
+	    	language       : 'english',                 
+	    	currency       : 'usd.',                    
+
+	    	requireName    : true,  
+	    	requirePhone   : true,      
+	    	requireEmail   : false,   
+	    	requireAddress : false,   
+  		})
+	</script>
 </body>
 </html>

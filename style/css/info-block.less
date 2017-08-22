@@ -1,10 +1,17 @@
 /*info-block*/
+.info-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .info-block {
   width: 100%;
   background-color: #e6e6e6;
   padding: 50px 0px;
+  flex-wrap: wrap;
 }
 .info-block__item {
+    width: 30%;
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
@@ -26,4 +33,10 @@
 	  	color: red;
 	  	top: 0;
   	}
+}
+.show-more {
+  padding: 5px;
+  border: 1px solid @colorText;
+  color: @colorText;
+  cursor: pointer;
 }

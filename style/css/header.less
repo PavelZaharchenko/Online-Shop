@@ -23,21 +23,39 @@
 .magnifier {
 	background: url(../img/circle.png) center no-repeat;
 }
-// корзина
-.busket {
-	// background: url(../img/slice-8.png) left no-repeat;
-	width: 55px;
-	padding: 2px;
-	position: relative;
-	text-decoration: none;
-	&:after {
-		content: "(0)";
-		position: absolute;
-		color: @colorText;
-		text-decoration: none;
-    	top: 3px;
-    	left: 25px;
+// корзина JS
+.basket-wrapper{
+	overflow: hidden;
+	border: 1px solid @colorText;
+	border-top: none;
+	&:hover {
+		box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
 	}
+}
+.cart-button{
+	display: inline-block;
+	// max-width: 240px;
+	padding: 4px 20px;
+	text-align: right;
+	color: @colorText;
+	position: relative;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		background: url(../img/slice-8.png) left no-repeat;
+	    background-size: 100% 100%;
+	    width: 11px;
+	    height: 11px;
+	    top: 8px;
+	    left: 5px;
+	}
+}
+
+.popover{
+  position: fixed!important;
 }
 .logo {
 	margin: auto;
