@@ -1,7 +1,6 @@
 {
   "name": "dw",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +21,6 @@
   "dependencies": {
     "gulp-less": "^3.3.2",
     "gulp-watch": "^4.3.11"
-  }
+  },
+  "description": ""
 }
