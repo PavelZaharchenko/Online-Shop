@@ -1,0 +1,53 @@
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 99;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.popup {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 25px 50px;
+    background: #fff;
+
+    &__close-btn {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        cursor: pointer;
+        
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+        }
+
+        &:before {
+            transform: rotate(-45deg);
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+    }
+}

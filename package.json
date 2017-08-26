@@ -15,12 +15,12 @@
     "url": "https://github.com/PavelZaharchenko/Online-Shop/issues"
   },
   "homepage": "https://github.com/PavelZaharchenko/Online-Shop#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  },
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
     "gulp-less": "^3.3.2",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "lodash": "^4.17.4"
   },
   "description": ""
 }

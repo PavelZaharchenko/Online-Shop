@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Online Shop</title>
-	<meta name="description" content="">
-	<meta name="Keywords" content="">
-	<link rel="stylesheet" type="text/css" href="style/css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/style/reset.css">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style/css/style.css">
-<!-- 	<link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="public/assets/style/style.css">
 </head>
 <body>
 <!-- 	header -->
@@ -19,24 +17,7 @@
 				<div class="col-md-12">
 					<div class="button-wrap">
       					<a class="search magnifier" data-toggle="modal" data-target="#myModal"></a>
-<!-- 						<div id="myModal" class="modal fade">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button class="close" type="button" data-dismiss="modal">×</button>
-									</div>
-									<div class="modal-body">
-      									<form class="navbar-form navbar-left">
-        									<div class="form-group">
-          										<input type="text" class="form-control" placeholder="Search">
-        									</div>
-        									<button type="submit" class="btn btn-default">Go find!</button>
-      									</form>
-      								</div>
-      								<div class="modal-footer"></div>
-								</div>
-							</div>
-						</div> -->
+
 						<div class="basket-wrapper">
         					<a href="#" class="cart-button">
           						<span class="cart-button-quantity"></span>
@@ -65,38 +46,20 @@
 	<!-- slider -->
 	<div class="container-fluid slider-wrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-			<ol class="carousel-indicators">
-		    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    	<li data-target="#myCarousel" data-slide-to="1"></li>
-		    	<li data-target="#myCarousel" data-slide-to="2"></li>
-		  	</ol>
-  		<!-- Wrapper for slides -->
-  			<div class="carousel-inner">
-	    		<div class="item active">
-		      		<img class="slide-icon" src="style/img/slide1.jpg" alt="clock1">
-	    		</div>
+  			<div class="carousel-inner"></div>
 
-	    		<div class="item">
-		      		<img class="slide-icon" src="style/img/slide2.jpg" alt="clock2">
-	    		</div>
-
-	    		<div class="item">
-		      		<img class="slide-icon" src="style/img/slide3.jpg" alt="clock3">
-	    		</div>
-  			</div>
-		<!-- Left and right controls -->
 			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
     			<span class="glyphicon glyphicon-chevron-left"></span>
     			<span class="sr-only">Previous</span>
-  			</a>
+			</a>
+			  
   			<a class="right carousel-control" href="#myCarousel" data-slide="next">
     			<span class="glyphicon glyphicon-chevron-right"></span>
     			<span class="sr-only">Next</span>
   			</a>
 		</div>
-	</div>	
-	<!-- content -->
+	</div>
+
 	<main class="page-main">
 		<div class="main-background">
         	<div class="container">
@@ -116,180 +79,15 @@
     	</div>
     	<div class="container">
       		<div class="tab-content">
-        		<div role="tabpanel" class="tab-pane fade in active" id="home">
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-1.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$180</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-1" data-price="180" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-2.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$220</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-2" data-price="220" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-3.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$220</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-3" data-price="220" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-4.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$299</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-4" data-price="299" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-5.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$350</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-5" data-price="350" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-6.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$200</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-6" data-price="200" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-7.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$150</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-7" data-price="150" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/clock-8.jpg">
-            			<p class="product-item__title">Watch</p>
-            			<p class="product-item__price">$299</p>
-            			<a href="#" class="cart-buy-button" data-name="Watch-8" data-price="299" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
+        		<div role="tabpanel" class="tab-pane fade in active" id="home"></div>
 
-        		</div>
-
-				<!-- #2 -->
-        		<div role="tabpanel" class="tab-pane fade" id="profile">
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-1.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$499</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="499" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-2.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$530</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="530" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-3.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$450</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="450" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-4.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$570</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="570" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-5.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$590</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="590" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-6.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$699</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="699" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-1.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$650</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="650" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-          			<div class="product-item col-sm-3 col-md-3">
-            			<img class="product-item__icon" src="style/img/accessories-2.jpg">
-            			<p class="product-item__title">Dapper Bristol</p>
-            			<p class="product-item__price">$720</p>
-            			<a href="#" class="cart-buy-button" data-name="Accessories" data-price="720" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
-          			</div>
-        		</div>
-        		<!-- #2 -->
-
+        		<div role="tabpanel" class="tab-pane fade" id="profile"></div>
       		</div>
     	</div>
-		<!--tab content2-->
+
 		<section class="info-block">
 			<div class="container">
-				<div class="row info-wrap">
-					<div class="info-block__item">
-						<img src="style/img/info1.jpg">
-						<h2 class="info-block__title">Lorem</h2>
-						<p class="info-block__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quibusdam atque dolor nobis, assumenda nisi!
-						</p>
-						<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
-						<div id="myModal" class="modal fade">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button class="close" type="button" data-dismiss="modal">×</button>
-									</div>
-									<div class="modal-body">
-										Текст уведомления
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="info-block__item">
-						<img src="style/img/info2.jpg">
-						<h2 class="info-block__title">Lorem</h2>
-						<p class="info-block__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a nisi veritatis modi, fugit repellendus!
-						</p>
-						<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
-						<div id="myModal" class="modal fade">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button class="close" type="button" data-dismiss="modal">×</button>
-									</div>
-									<div class="modal-body">
-										Текст уведомления
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="info-block__item">
-						<img src="style/img/info3.jpg">
-						<h2 class="info-block__title">Lorem</h2>
-						<p class="info-block__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a nisi veritatis modi, fugit repellendus!
-						</p>
-						<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
-						<div id="myModal" class="modal fade">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-body">
-										<div class="modal-header">
-											<button class="close" type="button" data-dismiss="modal">×</button>
-										</div>
-										<div class="modal-body">
-											Текст уведомления
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<div class="row info-wrap"></div>
 			</div>
 		</section>
 		<section class="location">
@@ -309,9 +107,9 @@
 						  	</a>
 
 						  	<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						    	<a class="dropdown-item" href="#">United States</a>
-						    	<a class="dropdown-item" href="#">Ukraine</a>
-						    	<a class="dropdown-item" href="#">Russia</a>
+						    	<a class="dropdown-item" href="">United States</a>
+						    	<a class="dropdown-item" href="">Ukraine</a>
+						    	<a class="dropdown-item" href="">Russia</a>
 						  	</div>
 						</div>
 						<form class="form-inline">
@@ -326,6 +124,7 @@
 			</div>
 		</section>
 	</main>
+
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
@@ -398,11 +197,46 @@
 		</div>
 	</footer>
 
+	<div class="popup-box">
+		<div class="popup">
+			<div class="popup__close-btn"></div>
+		</div>
+	</div>
+
+	<!-- Slider item template -->
+	<script id="slider-item-template" type="text/template">
+		<div class="item <%= isActive ? 'active' : '' %>">
+			<img class="slide-icon" src="<%= image %>" alt="<%= altText %>">
+	  </div>
+	</script>
+
+	<!-- Product item template -->
+	<script id="product-item-template" type="text/template">
+		<div class="product-item col-sm-3 col-md-3">
+			<img class="product-item__icon" src="<%= image %>">
+			<p class="product-item__title"><%= brand %></p>
+			<p class="product-item__model"><%= model %></p>
+			<p class="product-item__price">$<%= price %></p>
+			<a href="#" class="cart-buy-button" data-name="<%= model %>" data-price="<%= price %>" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+		</div>
+	</script>
+
+	<!-- Info item template -->
+	<script id="info-item-template" type="text/template">
+		<div class="info-block__item">
+			<img src="<%= image %>">
+			<h2 class="info-block__title"><%= name %></h2>
+			<p class="info-block__description"><%= description %></p>
+			<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
+		</div>
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src='libs/bootstrap-3.3.7-dist/js/bootstrap.js'></script>
 	<script type="text/javascript" src='libs/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
 	<script type="text/javascript" src="libs/salejs/cart.js"></script>
+	<script type="text/javascript" src="./node_modules/lodash/lodash.js"></script>
+	<script src="assets/js/main.js"></script>
 	<script>
   		cartjs.initialize({
 	    	emailOrdersTo  : 'pavelzacharchenko@gmail.com',

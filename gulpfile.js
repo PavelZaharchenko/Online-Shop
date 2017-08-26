@@ -1,12 +1,20 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var watch = require('gulp-watch');
+const gulp = require('gulp');
+const less = require('gulp-less');
+const watch = require('gulp-watch');
+const imagemin = require('gulp-imagemin');
  
-gulp.task('less', function () {
-  return gulp.src('./style/css/style.less')
+gulp.task('less', () => {
+  return gulp.src('./assets/style/style.less')
     .pipe(less())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/assets/style'));
 });
 
-gulp.watch("./style/css/style.less", ['less']);
-gulp.task("default", ["less"]);
+gulp.task('imagemin', () => {
+  gulp.src('./assets/img/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('public/assets/img'));
+});
+
+gulp.watch("./assets/style/*.less", ['less']);
+
+gulp.task("default", ['less', 'imagemin']);
