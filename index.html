@@ -197,9 +197,10 @@
 		</div>
 	</footer>
 
-	<div class="popup-box">
+	<div class="popup-box ">
 		<div class="popup">
 			<div class="popup__close-btn"></div>
+			<div class="popup__content"></div>
 		</div>
 	</div>
 
@@ -212,7 +213,7 @@
 
 	<!-- Product item template -->
 	<script id="product-item-template" type="text/template">
-		<div class="product-item col-sm-3 col-md-3">
+		<div class="product-item col-sm-3 col-md-3 <%= type%>" id="<%= id %>">
 			<img class="product-item__icon" src="<%= image %>">
 			<p class="product-item__title"><%= brand %></p>
 			<p class="product-item__model"><%= model %></p>
@@ -221,12 +222,25 @@
 		</div>
 	</script>
 
+	<script id="product-popup-temlate" type="text/template">
+		<div class="product">
+			<img src="<%= image %>" class="product__photo">
+			<div class="product__info">
+				<h1 class="product__brand"><%= brand %></h1>
+				<p class="product__name"><%= model %></p>
+				<p class="product__description"><%= description %></p>
+				<p class="product__price"><%= price %></p>
+				<div class="shop-btn">By now</div>
+			</div>
+		</div>
+	</script>
+
 	<!-- Info item template -->
 	<script id="info-item-template" type="text/template">
-		<div class="info-block__item">
+		<div class="info-block__item" id="<%= id %>">
 			<img src="<%= image %>">
 			<h2 class="info-block__title"><%= name %></h2>
-			<p class="info-block__description"><%= description %></p>
+			<p class="info-block__description"><%= isPopup ? description : description.slice(0, 50) + '...' %></p>
 			<a class="show-more" data-toggle="modal" data-target="#myModal">More</a>
 		</div>
 	</script>
