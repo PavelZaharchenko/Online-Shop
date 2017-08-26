@@ -59,23 +59,95 @@ $(() => {
         },
         {
             brand: 'Casio',
-            model: 'G-Shock',
+            model: 'Classic',
             image: 'public/assets/img/clock-2.jpg',
             price: 220
-        }
+        },
+        {
+            brand: 'Sevenfriday',
+            model: 'M-1',
+            image: 'public/assets/img/clock-3.jpg',
+            price: 130
+        },
+        {
+            brand: 'Fossil',
+            model: 'CH2565',
+            image: 'public/assets/img/clock-4.jpg',
+            price: 150
+        },
+        {
+            brand: 'Casio',
+            model: 'GM-011',
+            image: 'public/assets/img/clock-5.jpg',
+            price: 220
+        },
+        {
+            brand: 'Fossil',
+            model: 'ND25',
+            image: 'public/assets/img/clock-6.jpg',
+            price: 270
+        },
+        {
+            brand: 'Casio',
+            model: 'J-Shock',
+            image: 'public/assets/img/clock-7.jpg',
+            price: 350
+        },
+        {
+            brand: 'Casio',
+            model: 'EFR-526L-1A',
+            image: 'public/assets/img/clock-8.jpg',
+            price: 180
+        },
     ]
 
     let accessorieItems = [
         {
-            brand: 'Dapper Bristol',
-            model: 'Dapper Bristol',
+            brand: '33 Element',
+            model: '331501',
             image: 'public/assets/img/accessories-1.jpg',
             price: 499
         },
         {
-            brand: 'Dapper Bristol',
-            model: 'Dapper Bristol',
+            brand: 'Element',
+            model: '331403',
             image: 'public/assets/img/accessories-2.jpg',
+            price: 530
+        },
+        {
+            brand: 'Element',
+            model: '331503',
+            image: 'public/assets/img/accessories-3.jpg',
+            price: 530
+        },
+        {
+            brand: 'Element',
+            model: '331603',
+            image: 'public/assets/img/accessories-4.jpg',
+            price: 530
+        },
+        {
+            brand: 'Element',
+            model: '331703',
+            image: 'public/assets/img/accessories-5.jpg',
+            price: 530
+        },
+        {
+            brand: 'Element',
+            model: '331803',
+            image: 'public/assets/img/accessories-6.jpg',
+            price: 530
+        },
+        {
+            brand: 'Element',
+            model: '331903',
+            image: 'public/assets/img/accessories-2.jpg',
+            price: 530
+        },
+        {
+            brand: 'Element',
+            model: '331113',
+            image: 'public/assets/img/accessories-1.jpg',
             price: 530
         }
     ]
