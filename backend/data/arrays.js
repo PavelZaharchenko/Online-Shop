@@ -1,56 +1,5 @@
-class App {
-    constructor() {
-        this.init();
-    }
-
-    init() {
-        this.popupControl();
-    }
-
-    popupControl() {
-        $('.cart-buy-button').on('click', () => {
-            $('.popup-box').addClass('active');
-        });
-
-        $('.popup__close-btn').on('click', () => {
-            $('.popup-box').removeClass('active');
-        })
-    }
-}
-
-
-$(() => {
-    
-    let sliderItems = [
-        {
-            image: 'public/assets/img/slide1.jpg',
-            altText: 'clock-01',
-            isActive: true
-        },
-        {
-            image: 'public/assets/img/slide2.jpg',
-            altText: 'clock-02',
-            isActive: false
-        },
-        {
-            image: 'public/assets/img/slide3.jpg',
-            altText: 'clock-03',
-            isActive: false
-        }
-    ]
-
-    let sliderItemRender = (obj, templateSelector, outputSelector) => {
-        const sliderItemTemplate = $(templateSelector).html();
-        const compiled = _.template(sliderItemTemplate);
-        const newSliderItem = compiled(obj);
-        $(outputSelector).append(newSliderItem);
-    }
-    
-    sliderItems.forEach(item => {
-        sliderItemRender(item, '#slider-item-template', '.carousel-inner');
-    })
-
-    let watchItems = [
+module.exports = {
+    watchItems: [
         {
             brand: 'Casio',
             model: 'G-Shock',
@@ -77,11 +26,9 @@ $(() => {
             id: 'e67c0494',
             type: 'watch',
             description: 'lorem ipsum'
-        },
-
-    ]
-
-    let accessorieItems = [
+        }
+    ],
+    accessorieItems: [
         {
             brand: '33 Element',
             model: '331501',
@@ -90,19 +37,9 @@ $(() => {
             id: 'e55c0421',
             type: 'accessories',
             description: 'lorem ipsum'
-        },
-
-    ]
-    
-    watchItems.forEach(item => {
-        sliderItemRender(item, '#product-item-template', '#home');
-    });
-
-    accessorieItems.forEach(item => {
-        sliderItemRender(item, '#product-item-template', '#profile');
-    });
-
-    let infoItems = [
+        }
+    ],
+    infoItems: [
         {
             name: 'Lorem',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quibusdam atque dolor nobis, assumenda nisi!',
@@ -124,49 +61,22 @@ $(() => {
             id: 'e65c0488',
             isPopup: false
         }
+    ],
+    sliderItems: [
+        {
+            image: 'public/assets/img/slide1.jpg',
+            altText: 'clock-01',
+            isActive: true
+        },
+        {
+            image: 'public/assets/img/slide2.jpg',
+            altText: 'clock-02',
+            isActive: false
+        },
+        {
+            image: 'public/assets/img/slide3.jpg',
+            altText: 'clock-03',
+            isActive: false
+        }
     ]
-
-    infoItems.forEach(item => {
-        sliderItemRender(item, '#info-item-template', '.info-wrap');
-    });
-    
-
-    $('.cart-buy-button').on('click', e => {
-        $('.popup-box').addClass('active');
-
-        let $currentProduct = $(e.target).parents('.product-item');
-        let productId = $currentProduct.attr('id');
-        let isWatch = $currentProduct.hasClass('watch');
-
-        (isWatch ? watchItems : accessorieItems).forEach(item => {
-            if (item.id === productId) {
-                $('.popup__content').html('');
-                sliderItemRender(item, '#product-popup-temlate', '.popup__content');
-            }
-        })
-        
-    });
-
-    $('.popup__close-btn').on('click', () => {
-        $('.popup-box').removeClass('active');
-    })
-
-
-    $('.show-more').on('click', e => {
-        $('.popup-box').addClass('active');
-        
-        let $currentProduct = $(e.target).parents('.info-block__item');
-        console.log($currentProduct)
-        let productId = $currentProduct.attr('id');
-
-        infoItems.forEach(item => {
-            if (item.id === productId) {
-                $('.popup__content').html('');
-                item.isPopup = true;
-                console.log(item)
-                sliderItemRender(item, '#info-item-template', '.popup__content');
-            }
-        })
-    })
-    
-})
+};
