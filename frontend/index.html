@@ -16,14 +16,15 @@
 			<div class="row header">
 				<div class="col-md-12">
 					<div class="button-wrap">
-      					<a class="search magnifier" data-toggle="modal" data-target="#myModal"></a>
+						<a class="sing-up" data-toggle="modal" data-target="#singUp">Sing-up</a>
+
+      					<a class="search magnifier" data-toggle="modal" data-target="#search"></a>
 
 						<div class="basket-wrapper">
         					<a href="#" class="cart-button">
           						<span class="cart-button-quantity"></span>
         					</a>
       					</div>
-
 
 					</div>
 				</div>
@@ -203,6 +204,63 @@
 			<div class="popup__content"></div>
 		</div>
 	</div>
+
+	<!--sing-up modal-->
+	<div id="singUp" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+		 		<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		   			<h4 class="modal-title">User authorization</h4>
+		  		</div>
+		  		<div class="modal-body">
+		    		<form action="/action_page.php">
+	    				<div class="form-group">
+	      					<label for="email">Email:</label>
+	      					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+	    				</div>
+	    				<div class="form-group">
+	      					<label for="pwd">Password:</label>
+	      					<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+	    				</div>
+	    				<button type="submit" class="btn">Submit</button>
+	  				</form>
+		  		</div>
+			</div>
+		</div>
+	</div>
+
+	<!--search modal -->
+	<div id="search" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+		 		<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		   			<h4 class="modal-title">Search your purchase</h4>
+		  		</div>
+		  		<div class="modal-body">
+		    		<form action="/action_page.php">
+<!-- 	    				<div class="form-group">
+	      					<input type="email" class="form-control" id="email" placeholder="search" name="search">
+	    				</div> -->
+
+						
+						<div id="imaginary_container"> 
+                			<div class="input-group stylish-input-group">
+                    			<input type="text" class="form-control"  placeholder="Search" >
+                				<span class="input-group-addon">
+	                        		<button type="submit">
+	                            		<span class="glyphicon glyphicon-search"></span>
+	                        		</button>  
+                				</span>
+                			</div>
+            			</div>
+	  				</form>
+		  		</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- Slider item template -->
 	<script id="slider-item-template" type="text/template">
