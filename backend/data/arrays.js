@@ -12,7 +12,7 @@ module.exports = {
         {
             brand: 'Sevenfriday',
             model: 'M-1',
-            image: 'public/assets/img/clock-3.jpg',
+            image: 'public/assets/img/clock-2.jpg',
             price: 130,
             id: 'e55c89194',
             type: 'watch',
@@ -21,9 +21,54 @@ module.exports = {
         {
             brand: 'Fossil',
             model: 'CH2565',
-            image: 'public/assets/img/clock-4.jpg',
+            image: 'public/assets/img/clock-3.jpg',
             price: 150,
             id: 'e67c0494',
+            type: 'watch',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: 'Bosso',
+            model: 'OB2566',
+            image: 'public/assets/img/clock-4.jpg',
+            price: 120,
+            id: 'e64c0494',
+            type: 'watch',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: 'Casio',
+            model: 'CA2567',
+            image: 'public/assets/img/clock-5.jpg',
+            price: 150,
+            id: 'e65c0412',
+            type: 'watch',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: 'Fossil',
+            model: 'FO2568',
+            image: 'public/assets/img/clock-6.jpg',
+            price: 220,
+            id: 'e66c0712',
+            type: 'watch',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: 'Fossil',
+            model: 'FO2569',
+            image: 'public/assets/img/clock-7.jpg',
+            price: 250,
+            id: 'e66c0713',
+            type: 'watch',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: 'Casio',
+            model: 'CA2570',
+            image: 'public/assets/img/clock-8.jpg',
+            price: 140,
+            id: 'e69c0766',
             type: 'watch',
             description: 'lorem ipsum'
         }
@@ -37,7 +82,70 @@ module.exports = {
             id: 'e55c0421',
             type: 'accessories',
             description: 'lorem ipsum'
-        }
+        },
+        {
+            brand: '34 Element',
+            model: '331502',
+            image: 'public/assets/img/accessories-2.jpg',
+            price: 399,
+            id: 'e55c0422',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: '35 Element',
+            model: '331503',
+            image: 'public/assets/img/accessories-3.jpg',
+            price: 299,
+            id: 'e55c0423',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: '36 Element',
+            model: '331504',
+            image: 'public/assets/img/accessories-4.jpg',
+            price: 210,
+            id: 'e55c0424',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: '37 Element',
+            model: '331505',
+            image: 'public/assets/img/accessories-5.jpg',
+            price: 310,
+            id: 'e55c0425',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: '38 Element',
+            model: '331506',
+            image: 'public/assets/img/accessories-6.jpg',
+            price: 350,
+            id: 'e55c0426',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: '39 Element',
+            model: '331507',
+            image: 'public/assets/img/accessories-1.jpg',
+            price: 750,
+            id: 'e55c0427',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
+        {
+            brand: '40 Element',
+            model: '331508',
+            image: 'public/assets/img/accessories-2.jpg',
+            price: 150,
+            id: 'e55c0428',
+            type: 'accessories',
+            description: 'lorem ipsum'
+        },
     ],
     infoItems: [
         {
