@@ -197,7 +197,7 @@
 		</div>
 	</footer>
 
-	<div class="popup-box ">
+	<div class="popup-box">
 		<div class="popup">
 			<div class="popup__close-btn"></div>
 			<div class="popup__content"></div>
@@ -275,7 +275,7 @@
 			<p class="product-item__title"><%= brand %></p>
 			<p class="product-item__model"><%= model %></p>
 			<p class="product-item__price">$<%= price %></p>
-			<a href="#" class="cart-buy-button" data-name="<%= model %>" data-price="<%= price %>" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Вuy</a>
+			<div class="show-item">Show more</div>
 		</div>
 	</script>
 
@@ -287,7 +287,7 @@
 				<p class="product__name"><%= model %></p>
 				<p class="product__description"><%= description %></p>
 				<p class="product__price"><%= price %></p>
-				<div class="shop-btn">By now</div>
+				<a href="#" class="cart-buy-button" data-name="<%= model %>" data-price="<%= price %>" data-quantity="1">Вuy now</a>
 			</div>
 		</div>
 	</script>

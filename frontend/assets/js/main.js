@@ -1,33 +1,48 @@
-$(() => {
-    let renderItems = (obj, templateSelector, outputSelector) => {
+class App {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.showContent();
+        this.popupControl();
+        this.buyButton();
+    }
+
+    renderItems(obj, templateSelector, outputSelector) {
         const sliderItemTemplate = $(templateSelector).html();
         const compiled = _.template(sliderItemTemplate);
         const newSliderItem = compiled(obj);
         $(outputSelector).append(newSliderItem);
     }
 
-    $.get('/arrays', {}, onAjaxSuccess);
-       
-    function onAjaxSuccess(data) {
+    async showContent() {
+        let data = await $.get('/arrays');
+
         data.sliderItems.forEach(item => {
-            renderItems(item, '#slider-item-template', '.carousel-inner');
+            this.renderItems(item, '#slider-item-template', '.carousel-inner');
         });
 
         data.watchItems.forEach(item => {
-            renderItems(item, '#product-item-template', '#home');
+            this.renderItems(item, '#product-item-template', '#home');
         });
 
         data.accessorieItems.forEach(item => {
-            renderItems(item, '#product-item-template', '#profile');
+            this.renderItems(item, '#product-item-template', '#profile');
         });
 
         data.infoItems.forEach(item => {
-            renderItems(item, '#info-item-template', '.info-wrap');
+            this.renderItems(item, '#info-item-template', '.info-wrap');
         });
 
-
-        $('.main-content').on('click', '.cart-buy-button', e => {
+        this.showItem(data);
+        this.newsControl(data);
+    }
+    
+    showItem(data) {
+        $('.main-content').on('click', '.show-item', e => {
             $('.popup-box').addClass('active');
+            $('body').addClass('stop-scroll');
             
             let $currentProduct = $(e.target).parents('.product-item');
             let productId = $currentProduct.attr('id');
@@ -36,13 +51,16 @@ $(() => {
             (isWatch ? data.watchItems : data.accessorieItems).forEach(item => {
                 if (item.id === productId) {
                     $('.popup__content').html('');
-                    renderItems(item, '#product-popup-temlate', '.popup__content');
+                    this.renderItems(item, '#product-popup-temlate', '.popup__content');
                 }
             })
         });
+    }
 
+    newsControl(data) {
         $('.info-block').on('click', '.show-more', e => {
             $('.popup-box').addClass('active');
+            $('body').addClass('stop-scroll');
             
             let $currentProduct = $(e.target).parents('.info-block__item');
             let productId = $currentProduct.attr('id');
@@ -51,17 +69,30 @@ $(() => {
                 if (item.id === productId) {
                     $('.popup__content').html('');
                     item.isPopup = true;
-                    console.log(item)
-                    renderItems(item, '#info-item-template', '.popup__content');
+                    this.renderItems(item, '#info-item-template', '.popup__content');
                 }
             })
         });
-
-
     }
-    
-    $('.popup__close-btn').on('click', () => {
-        $('.popup-box').removeClass('active');
-    })
 
+    buyButton() {
+        $('.popup').on('click', '.cart-buy-button', () => {
+            console.log('hello')
+            $('.popup-box').removeClass('active');
+            $('body').removeClass('stop-scroll');
+        })
+    }
+
+    popupControl() {
+        $('.popup__close-btn').on('click', () => {
+            $('.popup-box').removeClass('active');
+            $('body').removeClass('stop-scroll');
+        })
+    }
+}
+
+$(() => {
+    new App
 })
+
+

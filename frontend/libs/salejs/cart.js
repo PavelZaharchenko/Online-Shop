@@ -572,7 +572,7 @@
 
       // Bootstrap styles will be applied only to elements inside of `.bootstrap` namespace,
       // creating such namespace if it's not yet created.
-      if(!($('.bootstrap-widget').size() > 0))
+      if(!($('.bootstrap-widget').length > 0))
         $('<div class="bootstrap-widget"></div>').appendTo('body')
 
       $('.cart-button').popover({
@@ -596,7 +596,7 @@
   proto.isActive = function(){
     // We need to check also if element exists because site may use dynamic page update and
     // tools like PJAX or Ruby on Rails Turbolinks.
-    return this._isActive && ($('.bootstrap-widget .popover').size() > 0)
+    return this._isActive && ($('.bootstrap-widget .popover').length > 0)
   }
 
   // Cart.
@@ -635,7 +635,7 @@
 
   proto.renderAddItem = function(item){
     var $cartItems = this.$el.find('.cart-items')
-    if($cartItems.size() > 0) $cartItems.append(app.render('cart-item', item))
+    if($cartItems.length > 0) $cartItems.append(app.render('cart-item', item))
     else this.render()
   }
 

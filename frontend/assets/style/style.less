@@ -9,15 +9,11 @@
 @import url('location.less');
 @import url('popup.less');
 
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
 body {
 	font-size: 16px;
 	box-sizing: border-box;
 	background-color: @colorBody;
 	color: @colorText;
-	font-family: 'Dancing Script', cursive;
 }
 .conteiner {
 	margin: auto;
@@ -53,4 +49,26 @@ footer {
 }
 .item-link {
 	color: @colorText;
+}
+
+.show-item,
+.cart-buy-button {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #000;
+	cursor: pointer;
+	transition: .3s;
+
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
+
+.cart-purchase-button {
+	color: #000 !important;
+}
+
+.stop-scroll {
+	overflow: hidden;
 }

@@ -17,4 +17,4 @@ gulp.task("imagemin", () => {
 
 gulp.watch("./assets/style/*.less", ["less"]);
 
-gulp.task("default", ["less"]);
+gulp.task("default", ["less", "imagemin"]);
